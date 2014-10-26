@@ -1,6 +1,6 @@
-<header>INTRODUCTION</header>
+INTRODUCTION
 
-The variables from this data are a subset of the variables found in the full training and test data. For a full description of the variables, what they measure, and what was contained in the full data set, please see the features_info.txt and README.txt files contained in the zipped data set.  A short summary of the variables can be found below:
+The variables from this data are a subset of the variables found in the full training and test data. For a full description of the variables, what they measure, and what was contained in the full data set, please see the features_info.txt and README.txt files contained in the zipped data set.  A short summary, taken from the features_info.txt and README.txt can be found below:
 
 "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."
 
@@ -59,6 +59,10 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean"
 
+THE TRANSFORMATION
+
 The data in its raw state comes in two sections, a test group and a training group. Additionally, each file for activity type and test subject we in different files. The script was used to combine the test and training group measurements and then properly label each point of data with the correct test subject and activity type.
 
-For this tidy dataset, only variables containing mean and standard deviation (defined in the features info text, and denoted in the variable heads as, mean() and std(), respectively) were used, as per the assignment instructions.
+For this tidy dataset, only variables containing mean and standard deviation (defined in the features info text, and denoted in the variable heads as, mean() and std(), respectively) were used, as per the assignment instructions. Of the 561 original variable measurements, 84 were used for this dataset, as well as one column to identiy test subject and one to identify activity type.
+
+In creating the second dataset, the average for each subject and activity type was taken across all selections. This data is written into the working directory as a text file called Dataset 2 For Upload.
