@@ -43,7 +43,7 @@ descriptive_activity <- select(activity_summary, Name)
 
 ##add descriptive activity column and subjects column to means_stds data
 ##to get tiny dataset!
-tidy_dataset <- cbind(Subject, descriptive_activity, means_stds)
+tidy_dataset <- cbind(subjects, descriptive_activity, means_stds)
 
 
 ##Code for independent dataset with avg of each variable for each activity and each subject
