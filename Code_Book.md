@@ -1,4 +1,4 @@
-INTRODUCTION
+--INTRODUCTION--
 
 The variables from this data are a subset of the variables found in the full training and test data. For a full description of the variables, what they measure, and what was contained in the full data set, please see the features_info.txt and README.txt files contained in the zipped data set.  A short summary, taken from the features_info.txt and README.txt can be found below:
 
@@ -59,7 +59,7 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean"
 
-THE TRANSFORMATION
+--THE TRANSFORMATION--
 
 The data in its raw state comes in two sections, a test group and a training group. Additionally, each file for activity type and test subject we in different files. The script was used to combine the test and training group measurements and then properly label each point of data with the correct test subject and activity type.
 
